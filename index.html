@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <style>
         .background{
             background-image: url('background.jpg');
@@ -40,21 +42,91 @@
             background: #0c161b;
             color: white;
         }
+
+        .play{
+            font-family: "Playfair Display", serif;
+        }
+
+        .lora{
+            font-family: "Lora", serif;
+        }
+
+        @media only screen and (max-width: 575.98px) 
+        { 
+            .btn {
+                width: fit-content;
+                margin-bottom: 7px;
+            }
+
+            .greet{
+                font-size: 20px;
+                margin-bottom: 0;
+            }
+
+            .name{
+                font-size: 28px;
+                margin-bottom: 25px;
+            }
+
+            .desig{
+                font-size: 15px;
+            }
+
+            .details{
+                font-size: 15px;
+            }
+
+            .contact{
+                font-size: 18px;
+            }
+
+            .visit{
+                font-size: 18px;
+            }
+
+            .btn{
+                font-size: 12px;
+            }
+
+            .fa {
+                padding: 8px;
+                font-size: 24px;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+            }
+        }
+
+        /* Small devices (tablets) */
+        @media only screen and (min-width: 576px) and (max-width: 767.98px) { }
+            
+        /* Medium devices (desktops) */
+        @media only screen and (min-width: 768px) and (max-width: 991.98px) { }
+            
+        /* Large devices (desktops) */
+        @media only screen and (min-width: 992px) and (max-width: 1199.98px) { }
+            
+        /* Extra large devices (large desktops) */
+        @media only screen and (min-width: 1200px) { }
     </style>
 </head>
 <body>
     <div class="container-fluid background" style="height: 100vh;">
         <div class="contents mx-5 px-5 py-5">
-            <h2 class="pt-5">Hello there,</h2>
-            <h1 class="pt-0">I'm Tanishq Arjun</h1>
-            <h4 class="mb-3">I'm Data Analyst & Developer</h4>
-            <h5 class="mb-3">I derive good insights from the given data and can create good web platforms also.</h5>
-            <div class="py-4">
-                <a class="btn btn-primary" href="Resume TRA.pdf">Download Resume</a>
-                <a class="btn btn-primary mx-3" href="contact.html">Contact Me</a>
+            <h2 class="greet pt-5 play">Hello there,</h2>
+            <h1 class="name pt-0 lora">I'm Tanishq Arjun</h1>
+            <h4 class="desig mb-3 lora">I am Data Analyst and Developer</h4>
+            <h5 class="details mb-3 lora">I derive good insights from the given data and can create good web platforms also.</h5>
+            <div class="py-2">
+                <h4 class="contact lora mt-4">Contact and About</h4>
+                <a class="btn btn-primary" href="Tanishq Arjun Resume.pdf">Download Resume</a>
+                <a class="btn btn-primary" href="contact.html">Contact Me</a>
                 <a class="btn btn-primary" href="about.html">About Me</a>
-                <h5 class="mt-2">Visit my other media: <a class="fa fa-linkedin mx-2" href="https://www.linkedin.com/in/tanishq-arjun-0708b7208/"></a>
-                <a class="fa fa-github mx-2" href="https://github.com/Tanishq-135"></a></h5>
+                <h5 class="visit mt-4 play">Visit my other media: </h5>
+                <a class="fa fa-linkedin mx-2" href="https://www.linkedin.com/in/tanishq-arjun-0708b7208/"></a>
+                <a class="fa fa-github" href="https://github.com/Tanishq-135"></a>
             </div>
         </div>
     </div>
